@@ -26,9 +26,12 @@ const Register = () => {
     return (
         <form onSubmit={submit}>
             <h1 className="h3 mb-3 fw-normal">Please register</h1>
-            <input type="name" className="form-control" id="nameInput" placeholder="Username" required autoFocus/>
-            <input type="email" className="form-control" id="emailInput" placeholder="name@example.com" required autoFocus/>
-            <input type="password" className="form-control" id="floatingPassword" placeholder="Password" required/>
+            <input type="name" className="form-control" id="nameInput" placeholder="Username" required autoFocus
+                   onChange={e => setName(e.target.value)}/>
+            <input type="email" className="form-control" id="emailInput" placeholder="name@example.com" required autoFocus
+                   onChange={e => setEmail(e.target.value)}/>
+            <input type="password" className="form-control" id="floatingPassword" placeholder="Password" required
+                   onChange={e => setPassword(e.target.value)}/>
 
             <button className="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
         </form>

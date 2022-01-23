@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Login = () => {
+const Home = (props:{name:string}) => {
+
     return (
         <div>
-            Home
+           Hello , {props.name} !
         </div>
     )
 }
-export default Login;
+export default Home;

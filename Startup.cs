@@ -51,11 +51,10 @@ namespace New_folder
             app.UseRouting();
 
             app.UseCors(options => options
-                //.WithOrigins("http://localhost:3000")
-                .AllowAnyOrigin()
+                .WithOrigins("http://localhost:3000")
                 .AllowAnyHeader()
                 .AllowAnyMethod()
-                //.AllowCredentials()
+                .AllowCredentials()
             );
 
             app.UseAuthorization();
