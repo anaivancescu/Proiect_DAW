@@ -54,3 +54,11 @@ C:\Users\anca.ivancescu\Desktop\proiect_DAW\obj\Debug\netcoreapp3.1\New folder.d
 C:\Users\anca.ivancescu\Desktop\proiect_DAW\obj\Debug\netcoreapp3.1\New folder.pdb
 C:\Users\anca.ivancescu\Desktop\proiect_DAW\obj\Debug\netcoreapp3.1\New folder.genruntimeconfig.cache
 C:\Users\anca.ivancescu\Desktop\proiect_DAW\bin\Debug\netcoreapp3.1\BCrypt.Net-Next.dll
+C:\Users\anca.ivancescu\Desktop\proiect_DAW\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\anca.ivancescu\Desktop\proiect_DAW\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Users\anca.ivancescu\Desktop\proiect_DAW\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Users\anca.ivancescu\Desktop\proiect_DAW\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\anca.ivancescu\Desktop\proiect_DAW\bin\Debug\netcoreapp3.1\proiectDAW-ui\react-auth\package-lock.json
+C:\Users\anca.ivancescu\Desktop\proiect_DAW\bin\Debug\netcoreapp3.1\proiectDAW-ui\react-auth\package.json
+C:\Users\anca.ivancescu\Desktop\proiect_DAW\bin\Debug\netcoreapp3.1\proiectDAW-ui\react-auth\public\manifest.json
+C:\Users\anca.ivancescu\Desktop\proiect_DAW\bin\Debug\netcoreapp3.1\proiectDAW-ui\react-auth\tsconfig.json
