@@ -27,6 +27,7 @@ namespace New_folder.Controllers {
                 {
                     Name = dto.Name,
                     Email = dto.Email,
+                    Status= dto.Status,
                     Password =BCrypt.Net.BCrypt.HashPassword(dto.Password)
                 };
 
