@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
+import Products from "./pages/Products";
 
 function App() {
     const [name, setName] = useState('')
@@ -28,6 +29,7 @@ function App() {
                             <Route path="/" element={<Home name={name}/>}/>
                             <Route path="/login" element={<Login setName={setName}/>}/>
                             <Route path="/register" element={<Register/>}/>
+                            <Route path="/products" element={<Products/>}/>
                     </Routes>
                 </main>
         </BrowserRouter>
