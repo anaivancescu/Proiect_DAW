@@ -1,16 +1,17 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const Nav = ( props:{name:string}) => {
+const Nav = ( props:{name:string ,setName:(name:string)=> void}) => {
     const logout = async () => {
         await fetch("http://localhost:5000/api/logout", {
             method: 'POST',
             credentials: 'include',
             headers: {'Content-Type': 'application/json'},
         });
+        props.setName('');
     }
     let menu;
-    if(props.name === ''){
+    if(props.name === '' || props.name === undefined){
         menu = (
             <ul className="navbar-nav me-auto mb-2 mb-md-0">
                 <li className="nav-item">
@@ -30,6 +31,7 @@ const Nav = ( props:{name:string}) => {
                 </li>
 
             </ul>
+
         )
     }
     return (

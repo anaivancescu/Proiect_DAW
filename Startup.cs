@@ -24,9 +24,14 @@ namespace New_folder
         {
             services.AddCors();
             services.AddDbContext<UserContext>(opt => opt.UseMySQL(Configuration.GetConnectionString("Default")));
-            services.AddControllers();
+            services.AddDbContext<ProductContext>(opt => opt.UseMySQL(Configuration.GetConnectionString("Default")));
+            services.AddDbContext<OrderContext>(opt => opt.UseMySQL(Configuration.GetConnectionString("Default")));
 
+            services.AddControllers();
+            
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<JwtService>();
         }
 

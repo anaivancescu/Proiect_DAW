@@ -1,7 +1,9 @@
-﻿namespace New_folder.Dtos
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace New_folder.Dtos
 {
     public class RegisterDto
-    {
+    {   
         public string Name { set; get; }
         public string Email { set; get; }
         public string Password { set; get; }

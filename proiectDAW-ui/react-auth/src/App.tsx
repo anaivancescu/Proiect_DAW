@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 
 function App() {
     const [name, setName] = useState('')
+
     useEffect(()=>{(
         async () => {const response= await fetch("http://localhost:5000/api/user", {
             headers: {'Content-Type': 'application/json'},
@@ -16,17 +17,17 @@ function App() {
             const content= await response.json();
 
             setName(content.name)}
-
     ) ()
     })
+
   return (
         <BrowserRouter>
-            <Nav name={name}/>
-                <main className="form-signin">
+            <Nav name={name} setName={setName}/>
+                <main >
                     <Routes>
-                            <Route path="/home" element={<Home name={name}/>}></Route>
-                            <Route path="/login" element={<Login/>}></Route>
-                            <Route path="/register" element={<Register />}></Route>
+                            <Route path="/" element={<Home name={name}/>}/>
+                            <Route path="/login" element={<Login setName={setName}/>}/>
+                            <Route path="/register" element={<Register/>}/>
                     </Routes>
                 </main>
         </BrowserRouter>

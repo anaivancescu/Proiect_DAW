@@ -24,7 +24,7 @@ const Register = () => {
         return <Navigate to="/login"/>
     }
     return (
-        <form onSubmit={submit}>
+        <form onSubmit={submit} className="form-signin">
             <h1 className="h3 mb-3 fw-normal">Please register</h1>
             <input type="name" className="form-control" id="nameInput" placeholder="Username" required autoFocus
                    onChange={e => setName(e.target.value)}/>

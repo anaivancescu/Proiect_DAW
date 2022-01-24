@@ -60,7 +60,6 @@ namespace New_folder.Controllers {
                     message = "success"
                 });
             }
-            
             [HttpGet("user")]
             public IActionResult User()
             {
@@ -80,7 +79,6 @@ namespace New_folder.Controllers {
                 {
                     return Unauthorized();
                 }
-                
             }
 
             [HttpPost("logout")]
